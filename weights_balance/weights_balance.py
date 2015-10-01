@@ -29,9 +29,6 @@ for i in range(1, items_number+1):
     print("#", i, " Enter item's weight")
     items_list.append(int(input("weight = ")))
 
-# Сортируем веса предметов по убыванию
-items_list.sort(reverse=True)
-
 # Находим сумму весов всех предметов
 weights_sum = sum(items_list)
 
