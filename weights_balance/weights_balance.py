@@ -37,7 +37,8 @@ weights_sum = sum(items_list)
 if 0 == weights_sum % 2:
     # Суммарный вес одной из частей предметов
     weight_for_search = weights_sum // 2
-    # Будем искать сумму весов только в половине предметов
+    # Будем искать сумму весов только в комбинациях,
+    # состоящих не менее чем из половины предметов
     middle_index = items_number // 2
 
     for i in range(items_number - 1, middle_index, -1):
